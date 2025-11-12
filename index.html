@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Management - Find Your Perfect PG</title>
+    <link rel="icon" href="./assets/images/house.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-icon">🏠</span>
+                        <span class="logo-text">PG<span class="highlight">Finder</span></span>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pgs.html">All PGs</a></li>
+                    <li><a href="login.html">List Your PG</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Find Your Perfect PG Nearby</h1>
+            <p class="hero-subtitle">Discover comfortable and affordable paying guest accommodations</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <div class="search-field">
+                        <label>📍 City</label>
+                        <input type="text" placeholder="Enter city name">
+                    </div>
+                    <div class="search-field">
+                        <label>💰 Rent Range</label>
+                        <select>
+                            <option>Select Range</option>
+                            <option>₹3,000 - ₹5,000</option>
+                            <option>₹5,000 - ₹8,000</option>
+                            <option>₹8,000 - ₹12,000</option>
+                            <option>₹12,000+</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label>👤 Gender</label>
+                        <select>
+                            <option>Any</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Co-living</option>
+                        </select>
+                    </div>
+                    <button class="btn-search">Search PG</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured PGs Section -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured PGs</h2>
+                <a href="pgs.html" class="view-all">View All →</a>
+            </div>
+            
+            <div class="pg-grid">
+                <!-- PG Card 1 -->
+                <div class="pg-card">
+                    <div class="pg-image">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=500" alt="Modern PG">
+                        <span class="badge">Featured</span>
+                    </div>
+                    <div class="pg-content">
+                        <h3>Sunshine Boys Hostel</h3>
+                        <p class="location">📍 Koramangala, Bangalore</p>
+                        <div class="pg-features">
+                            <span class="feature">🛏️ Single/Double</span>
+                            <span class="feature">📶 WiFi</span>
+                            <span class="feature">🍽️ Meals</span>
+                        </div>
+                        <div class="pg-footer">
+                            <div class="price">
+                                <span class="amount">₹8,500</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <a href="pg-details.html" class="btn-view">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PG Card 2 -->
+                <div class="pg-card">
+                    <div class="pg-image">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500" alt="Girls PG">
+                        <span class="badge new">New</span>
+                    </div>
+                    <div class="pg-content">
+                        <h3>Rose Girls PG</h3>
+                        <p class="location">📍 Indiranagar, Bangalore</p>
+                        <div class="pg-features">
+                            <span class="feature">🛏️ Triple Sharing</span>
+                            <span class="feature">🧺 Laundry</span>
+                            <span class="feature">🔒 Secure</span>
+                        </div>
+                        <div class="pg-footer">
+                            <div class="price">
+                                <span class="amount">₹6,500</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <a href="pg-details.html" class="btn-view">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PG Card 3 -->
+                <div class="pg-card">
+                    <div class="pg-image">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=500" alt="Co-living">
+                        <span class="badge">Popular</span>
+                    </div>
+                    <div class="pg-content">
+                        <h3>Urban Co-living Space</h3>
+                        <p class="location">📍 HSR Layout, Bangalore</p>
+                        <div class="pg-features">
+                            <span class="feature">🏋️ Gym</span>
+                            <span class="feature">📺 Common Area</span>
+                            <span class="feature">🅿️ Parking</span>
+                        </div>
+                        <div class="pg-footer">
+                            <div class="price">
+                                <span class="amount">₹12,000</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <a href="pg-details.html" class="btn-view">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PG Card 4 -->
+                <div class="pg-card">
+                    <div class="pg-image">
+                        <img src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=500" alt="Budget PG">
+                    </div>
+                    <div class="pg-content">
+                        <h3>Budget Stay PG</h3>
+                        <p class="location">📍 Whitefield, Bangalore</p>
+                        <div class="pg-features">
+                            <span class="feature">🛏️ 4 Sharing</span>
+                            <span class="feature">📶 WiFi</span>
+                            <span class="feature">⚡ Power Backup</span>
+                        </div>
+                        <div class="pg-footer">
+                            <div class="price">
+                                <span class="amount">₹4,500</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <a href="pg-details.html" class="btn-view">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose PGFinder?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Easy Search</h3>
+                    <p>Find your ideal PG with advanced filters and real-time availability</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Verified Listings</h3>
+                    <p>All PGs are verified with authentic photos and genuine reviews</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Direct Contact</h3>
+                    <p>Connect directly with PG owners without any middleman</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Booking</h3>
+                    <p>Safe and secure booking process with transparent pricing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About PGFinder</h3>
+                    <p>Your trusted platform for finding comfortable and affordable PG accommodations across major cities in India.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="pgs.html">Browse PGs</a></li>
+                        <li><a href="login.html">List Your PG</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Popular Cities</h3>
+                    <ul>
+                        <li><a href="pgs.html">Bangalore</a></li>
+                        <li><a href="pgs.html">Mumbai</a></li>
+                        <li><a href="pgs.html">Delhi</a></li>
+                        <li><a href="pgs.html">Pune</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PGFinder. All rights reserved.</p>
+                <p>By Shahid, Shikhar and Shorya</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
