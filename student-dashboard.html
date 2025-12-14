@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - PGFinder</title>
+    <link rel="icon" href="./assets/images/house.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <style>
+        /* Specific overrides for Student Dashboard */
+        .booking-status {
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .status-pending { background: #FEF3C7; color: #D97706; }
+        .status-confirmed { background: #D1FAE5; color: #059669; }
+        .saved-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar glass">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-icon">🏠</span>
+                        <span class="logo-text">PG<span class="highlight">Finder</span></span>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pgs.html">Browse PGs</a></li>
+                    <li><a href="student-dashboard.html" class="active">Dashboard</a></li>
+                    <li class="user-menu">
+                        <span class="user-avatar">🎓</span>
+                        <span class="user-name">Rahul Student</span>
+                    </li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-layout">
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <h3>Student Panel</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <span class="icon">📊</span> <span>Overview</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📅</span> <span>My Bookings</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">❤️</span> <span>Saved PGs</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">👤</span> <span>Profile</span>
+                </a>
+                <a href="#" class="nav-item logout">
+                    <span class="icon">🚪</span> <span>Logout</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main">
+            <div class="dashboard-header">
+                <div>
+                    <h1>My Dashboard</h1>
+                    <p>Welcome back, Rahul! Here is your activity.</p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon blue">📅</div>
+                    <div class="stat-info">
+                        <h3>Pending Requests</h3>
+                        <p class="stat-number">2</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green">🏠</div>
+                    <div class="stat-info">
+                        <h3>Current Stay</h3>
+                        <p class="stat-number">None</p>
+                        <span class="stat-change neutral">Browse PGs to book</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon orange">❤️</div>
+                    <div class="stat-info">
+                        <h3>Saved PGs</h3>
+                        <p class="stat-number">4</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <div class="section-header">
+                    <h2>Recent Booking Requests</h2>
+                </div>
+                <div class="table-container">
+                    <table class="pg-table">
+                        <thead>
+                            <tr>
+                                <th>PG Name</th>
+                                <th>Requested Date</th>
+                                <th>Move-in</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="pg-info">
+                                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=100" alt="PG">
+                                        <div><strong>Sunshine Boys Hostel</strong></div>
+                                    </div>
+                                </td>
+                                <td>14 Dec 2025</td>
+                                <td>01 Jan 2026</td>
+                                <td><span class="booking-status status-pending">Pending</span></td>
+                                <td><button class="btn-secondary" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;">Cancel</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="pg-info">
+                                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=100" alt="PG">
+                                        <div><strong>Rose Girls PG</strong></div>
+                                    </div>
+                                </td>
+                                <td>10 Dec 2025</td>
+                                <td>20 Dec 2025</td>
+                                <td><span class="booking-status status-confirmed">Approved</span></td>
+                                <td><button class="btn-primary" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;">Pay Token</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <div class="section-header">
+                    <h2>Saved PGs</h2>
+                    <a href="#" class="view-all">View All →</a>
+                </div>
+                <div class="saved-grid">
+                    <div class="pg-card" style="box-shadow: var(--shadow-sm);">
+                        <div class="pg-image" style="height: 150px;">
+                            <img src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=300" alt="PG">
+                        </div>
+                        <div class="pg-content" style="padding: 1rem;">
+                            <h3 style="font-size: 1rem;">Budget Stay PG</h3>
+                            <p class="location" style="font-size: 0.8rem; margin-bottom: 0.5rem;">Whitefield, Bangalore</p>
+                            <div class="price">
+                                <span class="amount" style="font-size: 1.2rem;">₹4,500</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
