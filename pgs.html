@@ -2,90 +2,382 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>All PGs - PGManager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All PGs - PGFinder</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/listings.css">
+    <link rel="shortcut icon" href="assets\images\house.png" type="image/x-icon">
+
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar glass">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo"><a href="index.html"><span class="logo-icon">🏠</span><span class="logo-text">PG<span class="highlight">Finder</span></span></a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-icon">🏠</span>
+                        <span class="logo-text">PG<span class="highlight">Finder</span></span>
+                    </a>
+                </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pgs.html" class="active">All PGs</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="login.html" class="btn-login">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Page Header -->
     <div class="page-header">
         <div class="container">
             <h1>Find Your Perfect Space</h1>
-            <p>Showing 24 results in Bangalore</p>
+            <p>Showing 24 verified PG accommodations in Bangalore</p>
         </div>
     </div>
 
+    <!-- Listings Section -->
     <section class="listings-section">
         <div class="container">
             <div class="listings-wrapper">
+                <!-- Filters Sidebar -->
                 <aside class="filters-sidebar">
                     <div class="filter-card">
                         <h3>Filters</h3>
+                        
                         <div class="filter-group">
-                            <label class="filter-label">City</label>
-                            <select class="filter-input"><option>Bangalore</option><option>Mumbai</option></select>
+                            <label class="filter-label">📍 City</label>
+                            <select class="filter-input">
+                                <option>Bangalore</option>
+                                <option>Mumbai</option>
+                                <option>Delhi</option>
+                                <option>Pune</option>
+                                <option>Hyderabad</option>
+                            </select>
                         </div>
+
                         <div class="filter-group">
-                            <label class="filter-label">Rent</label>
+                            <label class="filter-label">💰 Rent Range</label>
                             <div class="rent-inputs">
-                                <input type="number" placeholder="Min" class="filter-input">
-                                <input type="number" placeholder="Max" class="filter-input">
+                                <input type="number" placeholder="Min" class="filter-input" value="5000">
+                                <span>-</span>
+                                <input type="number" placeholder="Max" class="filter-input" value="15000">
                             </div>
                         </div>
-                        <button class="btn-primary" style="width: 100%;">Apply</button>
+
+                        <div class="filter-group">
+                            <label class="filter-label">👤 Gender</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> Male
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Female
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Co-living
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <label class="filter-label">🏠 Amenities</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> WiFi
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> AC
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Meals
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Laundry
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Parking
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Gym
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary" style="width: 100%;">Apply Filters</button>
+                        <button class="btn-secondary" style="width: 100%; margin-top: 0.5rem;">Clear All</button>
                     </div>
                 </aside>
 
-                <div class="pg-grid">
-                    <div class="pg-card">
-                        <div class="pg-image">
-                            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=500" alt="PG">
-                            <span class="badge">Featured</span>
-                        </div>
-                        <div class="pg-content">
-                            <h3>Sunshine Boys Hostel</h3>
-                            <p class="location">📍 Koramangala, Bangalore</p>
-                            <div class="pg-features">
-                                <span class="feature">WiFi</span><span class="feature">Meals</span>
+                <!-- PG Listings Grid -->
+                <div class="listings-content">
+                    <div class="pg-grid">
+                        <!-- PG Card 1 -->
+                        <div class="pg-card">
+                            <div class="pg-image">
+                                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=500" alt="Sunshine Boys Hostel">
+                                <span class="badge">Featured</span>
                             </div>
-                            <div class="pg-footer">
-                                <div class="price"><span class="amount">₹8,500</span></div>
-                                <a href="pg-details.html" class="btn-view">View Details</a>
+                            <div class="pg-content">
+                                <h3>Sunshine Boys Hostel</h3>
+                                <p class="location">📍 Koramangala, Bangalore</p>
+                                <div class="pg-features">
+                                    <span class="feature">WiFi</span>
+                                    <span class="feature">Meals</span>
+                                    <span class="feature">AC</span>
+                                </div>
+                                <div class="pg-footer">
+                                    <div class="price">
+                                        <span class="amount">₹8,500</span>
+                                        <span class="period">/month</span>
+                                    </div>
+                                    <a href="pg-details.html" class="btn-view">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PG Card 2 -->
+                        <div class="pg-card">
+                            <div class="pg-image">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500" alt="Rose Girls PG">
+                                <span class="badge badge-new">New</span>
+                            </div>
+                            <div class="pg-content">
+                                <h3>Rose Girls PG</h3>
+                                <p class="location">📍 Indiranagar, Bangalore</p>
+                                <div class="pg-features">
+                                    <span class="feature">Laundry</span>
+                                    <span class="feature">WiFi</span>
+                                    <span class="feature">Parking</span>
+                                </div>
+                                <div class="pg-footer">
+                                    <div class="price">
+                                        <span class="amount">₹6,500</span>
+                                        <span class="period">/month</span>
+                                    </div>
+                                    <a href="pg-details.html" class="btn-view">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PG Card 3 -->
+                        <div class="pg-card">
+                            <div class="pg-image">
+                                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=500" alt="Urban Co-living">
+                                <span class="badge badge-popular">Popular</span>
+                            </div>
+                            <div class="pg-content">
+                                <h3>Urban Co-living</h3>
+                                <p class="location">📍 HSR Layout, Bangalore</p>
+                                <div class="pg-features">
+                                    <span class="feature">Gym</span>
+                                    <span class="feature">WiFi</span>
+                                    <span class="feature">AC</span>
+                                </div>
+                                <div class="pg-footer">
+                                    <div class="price">
+                                        <span class="amount">₹12,000</span>
+                                        <span class="period">/month</span>
+                                    </div>
+                                    <a href="pg-details.html" class="btn-view">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PG Card 4 -->
+                        <div class="pg-card">
+                            <div class="pg-image">
+                                <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=500" alt="Elite Residency">
+                                <span class="badge">Featured</span>
+                            </div>
+                            <div class="pg-content">
+                                <h3>Elite Residency</h3>
+                                <p class="location">📍 Whitefield, Bangalore</p>
+                                <div class="pg-features">
+                                    <span class="feature">Meals</span>
+                                    <span class="feature">AC</span>
+                                    <span class="feature">Security</span>
+                                </div>
+                                <div class="pg-footer">
+                                    <div class="price">
+                                        <span class="amount">₹9,800</span>
+                                        <span class="period">/month</span>
+                                    </div>
+                                    <a href="pg-details.html" class="btn-view">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PG Card 5 -->
+                        <div class="pg-card">
+                            <div class="pg-image">
+                                <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=500" alt="Premium Girls Hostel">
+                                <span class="badge badge-new">New</span>
+                            </div>
+                            <div class="pg-content">
+                                <h3>Premium Girls Hostel</h3>
+                                <p class="location">📍 Jayanagar, Bangalore</p>
+                                <div class="pg-features">
+                                    <span class="feature">WiFi</span>
+                                    <span class="feature">Laundry</span>
+                                    <span class="feature">CCTV</span>
+                                </div>
+                                <div class="pg-footer">
+                                    <div class="price">
+                                        <span class="amount">₹7,200</span>
+                                        <span class="period">/month</span>
+                                    </div>
+                                    <a href="pg-details.html" class="btn-view">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PG Card 6 -->
+                        <div class="pg-card">
+                            <div class="pg-image">
+                                <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=500" alt="Modern Living Space">
+                                <span class="badge badge-popular">Popular</span>
+                            </div>
+                            <div class="pg-content">
+                                <h3>Modern Living Space</h3>
+                                <p class="location">📍 Marathahalli, Bangalore</p>
+                                <div class="pg-features">
+                                    <span class="feature">Gym</span>
+                                    <span class="feature">Pool</span>
+                                    <span class="feature">WiFi</span>
+                                </div>
+                                <div class="pg-footer">
+                                    <div class="price">
+                                        <span class="amount">₹14,500</span>
+                                        <span class="period">/month</span>
+                                    </div>
+                                    <a href="pg-details.html" class="btn-view">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- More cards (duplicates for demo) -->
+                        <div class="pg-card">
+                            <div class="pg-image">
+                                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=500" alt="Green Valley PG">
+                                <span class="badge">Featured</span>
+                            </div>
+                            <div class="pg-content">
+                                <h3>Green Valley PG</h3>
+                                <p class="location">📍 Electronic City, Bangalore</p>
+                                <div class="pg-features">
+                                    <span class="feature">WiFi</span>
+                                    <span class="feature">Parking</span>
+                                    <span class="feature">Security</span>
+                                </div>
+                                <div class="pg-footer">
+                                    <div class="price">
+                                        <span class="amount">₹7,000</span>
+                                        <span class="period">/month</span>
+                                    </div>
+                                    <a href="pg-details.html" class="btn-view">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pg-card">
+                            <div class="pg-image">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500" alt="Comfort Inn PG">
+                                <span class="badge badge-new">New</span>
+                            </div>
+                            <div class="pg-content">
+                                <h3>Comfort Inn PG</h3>
+                                <p class="location">📍 BTM Layout, Bangalore</p>
+                                <div class="pg-features">
+                                    <span class="feature">AC</span>
+                                    <span class="feature">Meals</span>
+                                    <span class="feature">WiFi</span>
+                                </div>
+                                <div class="pg-footer">
+                                    <div class="price">
+                                        <span class="amount">₹8,800</span>
+                                        <span class="period">/month</span>
+                                    </div>
+                                    <a href="pg-details.html" class="btn-view">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pg-card">
+                            <div class="pg-image">
+                                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=500" alt="Royal Residency">
+                                <span class="badge badge-popular">Popular</span>
+                            </div>
+                            <div class="pg-content">
+                                <h3>Royal Residency</h3>
+                                <p class="location">📍 Koramangala, Bangalore</p>
+                                <div class="pg-features">
+                                    <span class="feature">Gym</span>
+                                    <span class="feature">Laundry</span>
+                                    <span class="feature">AC</span>
+                                </div>
+                                <div class="pg-footer">
+                                    <div class="price">
+                                        <span class="amount">₹11,500</span>
+                                        <span class="period">/month</span>
+                                    </div>
+                                    <a href="pg-details.html" class="btn-view">View Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="pg-card">
-                        <div class="pg-image">
-                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500" alt="PG">
-                            <span class="badge">New</span>
-                        </div>
-                        <div class="pg-content">
-                            <h3>Rose Girls PG</h3>
-                            <p class="location">📍 Indiranagar, Bangalore</p>
-                            <div class="pg-features">
-                                <span class="feature">Laundry</span><span class="feature">AC</span>
-                            </div>
-                            <div class="pg-footer">
-                                <div class="price"><span class="amount">₹6,500</span></div>
-                                <a href="pg-details.html" class="btn-view">View Details</a>
-                            </div>
-                        </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">Next →</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About PGFinder</h3>
+                    <p>We help students and professionals find their perfect paying guest accommodations with ease and transparency.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pgs.html">Browse PGs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Popular Cities</h3>
+                    <ul>
+                        <li><a href="pgs.html">Bangalore</a></li>
+                        <li><a href="pgs.html">Mumbai</a></li>
+                        <li><a href="pgs.html">Delhi</a></li>
+                        <li><a href="pgs.html">Pune</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>📧 shahidansari945256@gmail.com</p>
+                    <p>📞 +91 8858369783 </p>
+                    <p>📍 Ghaziabad, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PGFinder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

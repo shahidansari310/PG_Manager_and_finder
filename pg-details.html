@@ -2,61 +2,317 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sunshine Boys Hostel - PGManager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Boys Hostel - PGFinder</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/details.css">
+    <link rel="shortcut icon" href="assets\images\house.png" type="image/x-icon">
+
 </head>
 <body>
     <nav class="navbar glass">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo"><a href="index.html"><span class="logo-icon">🏠</span><span class="logo-text">PG<span class="highlight">Finder</span></span></a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-icon">🏠</span>
+                        <span class="logo-text">PG<span class="highlight">Finder</span></span>
+                    </a>
+                </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pgs.html">All PGs</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="login.html" class="btn-login">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <section class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> / <a href="pgs.html">All PGs</a> / <span>Sunshine Boys Hostel</span>
+        </div>
+    </section>
+
     <section class="details-section">
         <div class="container">
             <div class="details-grid">
                 <div class="details-main">
                     <div class="banner-image">
-                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200" alt="Banner">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200" alt="Sunshine Boys Hostel">
+                    </div>
+                    
+                    <div class="image-gallery">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400" alt="Gallery 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400" alt="Gallery 2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=400" alt="Gallery 3">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=400" alt="Gallery 4">
+                        </div>
                     </div>
                     
                     <div class="info-section">
                         <h1>Sunshine Boys Hostel</h1>
-                        <p class="location">📍 Koramangala 5th Block, Bangalore</p>
-                        <div class="amenities-grid">
-                            <div class="amenity-item"><span class="amenity-icon">📶</span><span>WiFi</span></div>
-                            <div class="amenity-item"><span class="amenity-icon">🍽️</span><span>Meals</span></div>
-                            <div class="amenity-item"><span class="amenity-icon">❄️</span><span>AC</span></div>
-                            <div class="amenity-item"><span class="amenity-icon">🧺</span><span>Laundry</span></div>
+                        <div class="location-rating">
+                            <p class="location">📍 Koramangala 5th Block, Bangalore - 560095</p>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">4.8 (124 reviews)</span>
+                            </div>
+                        </div>
+
+                        <h2>Quick Info</h2>
+                        <div class="quick-info">
+                            <div class="info-item">
+                                <span class="icon">🚹</span>
+                                <div>
+                                    <strong>Gender</strong>
+                                    <p>Boys Only</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="icon">👥</span>
+                                <div>
+                                    <strong>Occupancy</strong>
+                                    <p>Single, Double, Triple</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="icon">🏢</span>
+                                <div>
+                                    <strong>Total Rooms</strong>
+                                    <p>25 Rooms Available</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="icon">📏</span>
+                                <div>
+                                    <strong>Area</strong>
+                                    <p>4500 sq ft</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="info-section">
                         <h2>About This PG</h2>
-                        <p>Welcome to Sunshine Boys Hostel, a premium accommodation located in the heart of Koramangala. Perfect for students and professionals.</p>
+                        <p class="description">
+                            Welcome to Sunshine Boys Hostel, a premium accommodation located in the heart of Koramangala. 
+                            Perfect for students and young professionals, we offer a comfortable and secure living environment. 
+                            Our hostel features modern amenities including high-speed WiFi, delicious meals, and well-maintained rooms. 
+                            With 24/7 security and CCTV surveillance, your safety is our priority. 
+                            Located near major IT companies, colleges, and entertainment hubs, this is the perfect place to call home.
+                        </p>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>Amenities</h2>
+                        <div class="amenities-grid">
+                            <div class="amenity-item">
+                                <span class="amenity-icon">📶</span>
+                                <span>High Speed WiFi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon">🍽️</span>
+                                <span>3 Meals Included</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon">❄️</span>
+                                <span>Air Conditioning</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon">🧺</span>
+                                <span>Laundry Service</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon">🅿️</span>
+                                <span>Parking Available</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon">📹</span>
+                                <span>CCTV Surveillance</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon">🔒</span>
+                                <span>24/7 Security</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon">🔥</span>
+                                <span>Hot Water</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon">🪑</span>
+                                <span>Furnished Rooms</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon">💡</span>
+                                <span>Power Backup</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon">📺</span>
+                                <span>Common TV Room</span>
+                            </div>
+                            <div class="amenity-item">
+                                <span class="amenity-icon">🏋️</span>
+                                <span>Gym Access</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>Pricing Options</h2>
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <h3>Single Occupancy</h3>
+                                <div class="price-tag">
+                                    <span class="amount">₹12,000</span>
+                                    <span class="period">/month</span>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Private Room</li>
+                                    <li>Attached Bathroom</li>
+                                    <li>AC Included</li>
+                                    <li>3 Meals Daily</li>
+                                    <li>WiFi Access</li>
+                                </ul>
+                            </div>
+
+                            <div class="pricing-card featured">
+                                <span class="popular-badge">Most Popular</span>
+                                <h3>Double Occupancy</h3>
+                                <div class="price-tag">
+                                    <span class="amount">₹8,500</span>
+                                    <span class="period">/month</span>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Shared Room (2 People)</li>
+                                    <li>Attached Bathroom</li>
+                                    <li>AC Included</li>
+                                    <li>3 Meals Daily</li>
+                                    <li>WiFi Access</li>
+                                </ul>
+                            </div>
+
+                            <div class="pricing-card">
+                                <h3>Triple Occupancy</h3>
+                                <div class="price-tag">
+                                    <span class="amount">₹6,500</span>
+                                    <span class="period">/month</span>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li>Shared Room (3 People)</li>
+                                    <li>Common Bathroom</li>
+                                    <li>Fan Only</li>
+                                    <li>2 Meals Daily</li>
+                                    <li>WiFi Access</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>House Rules</h2>
+                        <ul class="rules-list">
+                            <li>🚭 No Smoking inside rooms</li>
+                            <li>🍺 No Alcohol or illegal substances</li>
+                            <li>🔊 Quiet hours: 10 PM - 7 AM</li>
+                            <li>👥 No opposite gender visitors after 9 PM</li>
+                            <li>🧹 Keep common areas clean</li>
+                            <li>🔑 Security deposit required</li>
+                            <li>📝 One month notice period for vacating</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>Nearby Places</h2>
+                        <div class="nearby-places">
+                            <div class="nearby-item">
+                                <strong>Metro Station</strong>
+                                <p>🚇 Koramangala Metro - 1.2 km (5 min walk)</p>
+                            </div>
+                            <div class="nearby-item">
+                                <strong>Bus Stop</strong>
+                                <p>🚌 Sony World Junction - 300m (2 min walk)</p>
+                            </div>
+                            <div class="nearby-item">
+                                <strong>Restaurants</strong>
+                                <p>🍔 Forum Mall, various eateries - 800m</p>
+                            </div>
+                            <div class="nearby-item">
+                                <strong>Hospitals</strong>
+                                <p>🏥 Manipal Hospital - 2 km (10 min)</p>
+                            </div>
+                            <div class="nearby-item">
+                                <strong>Shopping</strong>
+                                <p>🛒 More Supermarket - 400m (3 min walk)</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <aside class="details-sidebar">
                     <div class="booking-card">
                         <div class="price-header">
-                            <div class="price"><span class="amount" style="font-size: 2rem; color: var(--primary); font-weight: 700;">₹8,500</span>/month</div>
-                            <span class="badge" style="position: relative; top:0; left:0;">Available Now</span>
+                            <div class="price">
+                                <span class="amount">₹8,500</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <span class="availability">✓ Available Now</span>
                         </div>
-                        <button class="btn-primary" style="width: 100%;" onclick="window.location.href='booking-success.html'">Book Now</button>
-                        <button class="btn-secondary" style="width: 100%; margin-top: 1rem;">Schedule Visit</button>
+                        
+                        <a href="booking-success.html" class="btn-primary" style="width: 100%; text-decoration: none; display: block; margin-bottom: 1rem;">Book Now</a>
+                        <a href="#" class="btn-secondary" style="width: 100%; text-decoration: none; display: block;">Schedule Visit</a>
+                        
+                        <div class="contact-info">
+                            <h4>Contact Owner</h4>
+                            <div class="owner-details">
+                                <div class="owner-avatar">👤</div>
+                                <div>
+                                    <strong>Rajesh Kumar</strong>
+                                    <p>Property Owner</p>
+                                </div>
+                            </div>
+                            <button class="btn-contact">📞 Call Now</button>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Property Highlights</h4>
+                        <ul class="info-list">
+                            <li>✓ Verified Property</li>
+                            <li>✓ 100+ Happy Tenants</li>
+                            <li>✓ Prime Location</li>
+                            <li>✓ 24/7 Support</li>
+                            <li>✓ Clean & Hygienic</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Share This PG</h4>
+                        <div class="share-buttons">
+                            <button class="share-btn">📱 WhatsApp</button>
+                            <button class="share-btn">📧 Email</button>
+                            <button class="share-btn">🔗 Copy Link</button>
+                        </div>
                     </div>
                 </aside>
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 PGFinder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
